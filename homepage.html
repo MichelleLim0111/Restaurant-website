@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage-Dolce Vita Delights</title>
+    <link rel="stylesheet" href="css/Overallstyle.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&family=Noto+Serif+SC:wght@500&display=swap" rel="stylesheet">
+
+    <style>
+
+        /* navigation style  */
+        .nav-links {
+            justify-content: center;
+            display: flex;
+            width: 100%;
+        }
+
+        .nav-links a:link, .nav-links a:visited {
+            text-decoration: none;
+            color: #f5efe6;
+            padding-bottom: 0px;
+        }
+
+        .nav-links ul li {
+            list-style: none;
+            display: inline-block;
+            padding: 0px 25px 0px 25px;
+            font-family: 'Libre Baskerville', serif;
+            color: #f5efe6;
+            font-size: 15px;
+        }
+
+        /* banner image style */
+        .image-frame {
+            display: flex;
+            justify-content: center;
+        }
+
+        .image-frame img {
+            width: 100%;
+            overflow: hidden;
+            height: 500px;
+            object-fit: cover;
+            margin: 0px 0px 0px 0px;
+        }
+
+        /* background image style */
+        .background-container {
+            background-image: url("Background.jpg");
+            background-size: cover;
+            background-position: center;
+            padding-bottom: 20px;
+            padding-top: 20px;
+        }
+
+        .text {
+            color: #0A0908;
+            text-align: center;
+            font-family: 'Baskerville';
+            font-size: 2rem; 
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            border-color: #a9927d;
+            border-radius: 5%;
+            background-color: #a9927d;
+            margin:  auto; 
+            max-width: 800px; 
+            padding: 10px;
+            opacity: 0.6; 
+        }
+
+        .button {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            padding-left: 20px;
+            padding-right: 20px;
+            font-size: 18px;
+            background-color: #a9927d;
+            color: #0A0908;
+            border: none;
+            text-align: left;
+            font-family: 'Libre Baskerville', serif;
+            border-radius: 15px;
+            cursor: pointer;
+            display: inline-block;
+            margin-left: 380px;
+            margin-top: 20px;
+            margin-right: 380px;
+        }
+
+        .description_text{
+            color: #faf3e0;
+            text-align: center;
+            font-family: 'Baskerville';
+            font-size: 1rem;
+            font-style: normal;
+            line-height: 1.5; 
+            padding: 0 10px;
+        }
+
+        .description_text_2{
+            color: #faf3e0;
+            text-align: center;
+            padding-left: 100px;
+            padding-top: 50px;
+            padding-bottom: 10px;
+            font-size: 1rem;
+            line-height: 1.5;
+            font-family: 'Baskerville';
+            order: 5;
+        }
+
+        .button2 {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            padding-left: 20px;
+            padding-right: 20px;
+            font-size: 18px;
+            background-color: #a9927d;
+            color: #0A0908;
+            border: none;
+            text-align: center;
+            font-family: 'Libre Baskerville', serif;
+            border-radius: 15px;
+            cursor: pointer;
+            display: inline-block;
+            margin-left: 310px;
+            margin-top: 10px;
+
+        }
+
+        .image2-frame {
+            display: flex;
+            flex-wrap: wrap; 
+            align-items: center;
+            margin-bottom: 10px;
+            padding-top: 50px;
+            padding-left: 10%; 
+            padding-right: 10%;
+        }
+
+        .image2-content {
+            flex: 1;
+            margin-right: 20px;
+        }
+
+        .image2-content img {
+            width: 350px;
+            max-width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+
+        .description-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .image3-frame {
+            display: flex;
+            align-items: center;
+            justify-content: space-between; 
+            margin-bottom: 10px;
+            padding-top: 50px;
+            padding-left: 10%; 
+            padding-right: 10%;
+        }
+
+        .image3-content img {
+            width: 350px;
+            height: 400px;
+            object-fit: cover;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        .image3-frame img {
+            width: 450px;
+            height: 350px;
+            object-fit: cover;
+            margin-top: 60px;
+            margin-bottom: 60px;
+            margin-left: 90px;
+            margin-right: 20px;
+            order: 2;
+        }
+
+        .image4-frame {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 1% ;
+            padding-left: 10%;
+
+
+        }
+
+        .image4-frame img {
+            width: 450px;
+            height: 300px;
+            object-fit: cover;
+            margin: 60px 60px 40px 30px;
+            padding-left: 80px;
+        }
+
+        .hrline{
+            width: 90%;
+            margin-top: 10px;
+            border: 1px solid #A9927D;
+        }
+
+
+
+    </style>
+    </head>
+    <body>
+        <header>
+            <a href="homepage.html"><img src="LOGO(1).png" alt="Dolce Vita Delights Logo" class="logo"></a>
+    <nav>
+        <div class="nav-links">
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="AboutUs1.html">About Us</a></li>
+                <li><a href="MenuAll.html">Menu</a></li>
+                <li><a href="Promotion.html">Promotions</a></li>
+                <li><a href="ContactUs1.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+        </header>
+
+        <div class="image-frame">
+            <img src = "CafeImage1.jpg" alt="Cafe Image 1" id="Cafe-Image1">
+        </div>
+
+
+        <div class="background-container">
+            <div class="text">
+                Welcome to our delightful dessert cafe,<br> a haven for those with a sweet tooth <br>
+                and a love for indulgence!<br> Our talented pastry chefs curate <br> a menu of exquisite desserts,<br>
+                from velvety cakes to delicate pastries, <br> all made with the finest ingredients. <br>
+                Immerse yourself in the cozy ambience, <br> savoring each delectable bite.
+            </div>
+        </div>
+
+        <hr class="hrline">
+
+        <div class="image2-frame">
+            <div class="image2-content">
+                <a href="MenuAll.html"><img src="Menu.jpg" alt="Menu Image" id="Menu-Image"></a>
+            </div>
+            <div class="description-content">
+                <div class="description_text">
+                    From savory to sweet, our menu is a celebration of diverse flavors and culinary artistry. <br>
+                    Indulge in our sumptuous sandwiches,<br> bursting with fresh ingredients and thoughtfully curated combinations. <br>
+                    Delight in the richness of our velvety cakes,<br> each slice a heavenly symphony of textures and tastes. <br>
+                    Experience the comforting goodness of our freshly baked bagels, <br>
+                    perfect for a delightful breakfast or brunch experience.
+                </div>
+                <a href="MenuAll.html"><button class="button">MENU</button></a>
+            </div>
+        </div>
+
+        <div class="image3-frame">
+            <div class="description-content-2">
+                <div class="description_text_2">
+                    Unearth the enthralling narratives and significant milestones that intricately weave the
+                    rich fabric of our team's extraordinary history, revealing the resilience, dedication,
+                    and collective spirit that have fueled our journey of growth and success. <br>
+                    Click here to find out more!
+                </div>
+                <a href="AboutUs1.html"><button class="button2">ABOUT US</button></a>
+            </div>
+            <div class="image3-content">
+                <a href="AboutUs1.html"><img src="AboutUs.png" alt="AboutUs Image" id="AboutUs-Image"></a>
+            </div>
+        </div>
+
+        <div class="image4-frame">
+            <div class="image2-content">
+                <a href="Promotion.html"><img src="Promotion 2.png" alt="Promotion Image" id="Promotion-Image"></a>
+            </div>
+            <div class="description-content">
+            <div class="description_text">             
+                Embrace a world of new and exciting promotions beckoning with anticipation!
+                <br> Delight in captivating offers and bountiful deals found right here, <br>
+                 ensuring an unforgettable experience filled with valuable rewards and boundless joy. <br>
+                New and Exciting Promotions can be found here!
+            </div>
+                <a href="Promotion.html"><button class="button">PROMOTION</button></a>
+            </div>
+        </div>
+
+
+        <img src="Arrow.png" alt="Arrow" id="arrow" onclick="scrollToTop()">a>
+
+        <script src="ScrollUpJS.js"></script>
+        <script src="HomepageJS.js"></script>
+        <script src="PhoneMenuJS.js"></script>
+
+        
+    <footer>
+        <div>
+            <a href="ContactUs1.html"><img src="LOGO(1).png" alt="Dolce Vita Delights Logo" class="dolcelogo"></a>
+        </div>
+        <div>
+            <h2>Contact Us</h2>
+            <p><img src="gmaillogo.png" alt="Gmail" class="contact-icon">  dolcevitadelights@gmail.com  
+            <img src="fblogo.png" alt="Facebook" class="contact-icon">  DolceVitaDelights   
+            <img src="whatsapplogo.png" alt="Whatsapp" class="contact-icon">  +60123456789 
+            <img src="instalogo.png" alt="Insta" class="contact-icon">  @DolceVitaDelights </p>
+        </div>
+    
+        <div class="copyright">
+            &copy; Copyright 2021 Dolce Vita Delights Sdn. Bhd. <br>
+            Registration No. 20150103562 (791602-A) <br>
+            All rights reserved.
+        </div>
+    </footer>
+    </body>
+</html>

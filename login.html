@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Dolce Vita Delights</title>
+    <link rel="stylesheet" href="css/Overallstyle.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&family=Noto+Serif+SC:wght@500&display=swap" rel="stylesheet">
+
+    <style>
+                body {
+            background-image: url("signupbackground.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: #faf3e0;
+            font-family: 'Libre Baskerville', serif;
+            margin: 0; 
+            padding: 0; 
+        }
+
+        .login-container {
+            padding: 30px; 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+
+        .login-form {
+            max-width: 500px;
+            background-color: #a9927d;
+            border-radius: 10px;
+            padding: 30px; 
+            width: 100%; 
+            text-align: center;
+        }
+
+        
+        .login-form label {
+            display: block;
+            margin-bottom: 20px; 
+        }
+
+        .login-form input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px; 
+            border-radius: 5px;
+            border: 1px solid #0A0908;
+        }
+
+        .login-form button {
+            background-color: #faf3e0;
+            color: #0A0908;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 10px; 
+        }
+
+        .login-form button:hover {
+            color: #faf3e0;
+            background-color: #49111c;
+        }
+
+        .dolcelogo {
+            height: 100px; 
+            margin-bottom: 10px; 
+        }
+        
+       
+        h2 {
+            color: #0A0908;
+            margin-top: 10px; 
+        }
+
+        
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        
+        .logo-and-title-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        
+        .back-button {
+            background-color: #faf3e0;
+            color: #0A0908;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .back-button:hover {
+            color: #faf3e0;
+            background-color: #49111c;
+        }
+    </style>
+</head>
+<body>
+    <h1>WELCOME TO DOLCE VITA DELIGHTS</h1>
+    <div class="login-container">
+        <div class="login-form">
+            <div class="logo-and-title-container">
+                <img class="dolcelogo" src="LOGO(1).png" alt="Dolce Vita Delights Logo">
+                <h2>Log In</h2>
+            </div>
+            <form onsubmit="return validateLogin()" action="homepage.html" method="POST">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit">Log In</button>
+            </form>
+
+            <button class="back-button" onclick="location.href='signup.html'">Back</button>
+        </div>
+    </div>
+
+    <script src="login.js"></script>></script>
+</body>
+</html>

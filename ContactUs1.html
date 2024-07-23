@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us-Dolce Vita Delights</title>
+    <link rel="stylesheet" href="css/Overallstyle.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&family=Noto+Serif+SC:wght@500&display=swap" rel="stylesheet">
+    
+    <style>
+        /* navigation style  */
+        .nav-links {
+            justify-content: center;
+            display: flex;
+            width: 100%;
+        }
+
+        .nav-links a:link, .nav-links a:visited {
+            text-decoration: none;
+            color: #f5efe6;
+            padding-bottom: 0px;
+        }
+
+        .nav-links ul li {
+            list-style: none;
+            display: inline-block;
+            padding: 0px 25px 0px 25px;
+            font-family: 'Libre Baskerville', serif;
+            color: #f5efe6;
+            font-size: 15px;
+        }
+        
+        body{
+        width: 100%;
+        background-color: #3c2e29;
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+        }
+
+        h1{
+         text-align: center;
+         color: #faf3e0;
+         font-size: 40px;
+        }
+
+        .contact-icon {
+    width: 30px;
+    vertical-align: middle;
+    margin-left: 1%;
+    }
+                .copyright {
+                text-align: center;
+                font-family: 'Libre Baskerville', serif;
+                font-size: small;
+                font-weight:500;
+                padding-bottom: 1%;
+                padding-top: 1%;
+            }
+
+    /* Footer styles */
+    footer {
+    background-color: #a9927d;
+    overflow: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    }
+
+    .dolcelogo {
+    float: left;
+    height: 100px;
+    padding: 10px;
+    vertical-align: middle;
+    }
+
+    .text-container {
+    text-align: left;
+    }
+
+    p {
+    color: #faf3e0;
+    text-align: center;
+    font-size:1rem;
+    }
+
+    h3{
+        text-align: center;
+        size: 20px;
+    }
+
+    .form-container{
+        background-color: #a9927d;
+        border-radius: 4px;
+        padding: 20px;
+        width: 500px;
+        margin:auto;
+        font-size: 14px;
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
+    button{
+        padding:10px;
+        margin-top: 15px;
+        width: 30%;
+        
+        
+    }
+
+    .input-control{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .input-control input{
+        border: 2px solid #f0f0f0;
+        border-radius: 6px;
+        display: block;
+        font-size:12px ;
+        padding: 10px;
+        width: 450px;
+        
+    }
+
+    .input-control.success input{
+        border-color:#09c372;
+    }
+    
+    .input-control.error input{
+        border-color: red;
+    }
+    
+    label{
+        margin-top: 5px;
+    }
+    
+    
+    </style>
+    </head>
+    <body>
+        <header>
+            <a href="homepage.html"><img src="LOGO(1).png" alt="Dolce Vita Delights Logo" class="logo"></a>
+            <nav>
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="homepage.html">Home</a></li>
+                        <li><a href="AboutUs1.html">About Us</a></li>
+                        <li><a href="MenuAll.html">Menu</a></li>
+                        <li><a href="Promotion.html">Promotions</a></li>
+                        <li><a href="ContactUs1.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </nav>
+                </header>
+
+            <h1>Contact Us</h1>
+
+            <form class="text-container">
+                <div class="content">
+                    <p><b>We are located at:</b><br>B-01-23, Jalan Lagoon Selatan, Sunway South Quay, Bandar Sunway, 47500 Selangor.</p>
+                    <p><b>Opening Hour:</b> 9am - 6pm </p>
+                    <p><b>Customer Service:</b> <br>Monday -Friday (10am-5pm)<br>Saturday - Sunday (10am-3pm)</p>
+                    <p><b>To order:</b><br>Instagram Direct Message: @DolceVitaDelights<br>Whatsapp: +6012-3456-789</p>
+                </div>
+            </div>
+
+            <div class="form-container">
+                <h3>FOR INQUIRIES</h3>
+            <form id="contact-form" method="post" onsubmit=" return validateForm()">
+                <div class="input-control">
+                    <label for="username">Username</label>
+                    <input id="username" name="username" type="text" required>
+                    <div class="error"></div>
+                </div>
+                <div class="input-control">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="text" required>
+                    <div class="error"></div>
+                </div>
+                <div class="input-control">
+                    <label for="phoneno">Phone No</label>
+                    <input id="phoneno" name="phone-no" type="tel" required >
+                    <div class="error"></div>
+                </div>
+                <div class="input-control">
+                    <label for="message">Message</label>
+                    <textarea cols="50" name="message" required></textarea>
+                    <div class="error"></div>
+                </div>
+                    <button type="submit">Submit</button>
+                </form>
+                </div>
+            
+                <img src="Arrow.png" alt="Arrow" id="arrow" onclick="scrollToTop()">
+
+            <script>
+                function validateForm() {
+                    var username = document.forms.contact-form.username.value;
+                    var email = document.forms.contact-form.email.value;
+                    var phoneno = document.forms.contact-form.phoneno.value;
+                    var message = document.forms.contact-form.message.value;
+            
+                    // Regular expression for Email Validation.
+                    var regEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/g;
+                    // Regular expression for Phone Number validation.
+                    var regPhone = /^\d{10}$/;
+            
+                    if (username == "") {
+                        alert("Please enter your name");
+                        document.forms.contact-form.username.focus();
+                        return false;
+                    }
+            
+                    if (email == "") {
+                        alert("Please enter your email");
+                        document.forms.contact-form.email.focus();
+                        return false;
+                    }
+            
+                    if (phoneno == "" || !regPhone.test(phoneno)) {
+                        alert("Please enter valid phone number");
+                        document.forms.contact-form.phoneno.focus();
+                        return false;
+                    }
+            
+                    if (message == "") {
+                        alert("Please enter your message!");
+                        document.forms.contact-form.message.focus()
+                        return false;
+                    }
+                    alert("Form submitted successfully!");
+                    return true;
+                }               
+                
+            </script>
+            <script src="ScrollUpJS.js"></script>
+            <footer>
+                <div>
+                    <a href="ContactUs1.html"><img src="LOGO(1).png" alt="Dolce Vita Delights Logo" class="dolcelogo"></a>
+                </div>
+                <div>
+                    <h2>Contact Us</h2>
+                    <img src="gmaillogo.png" alt="Gmail" class="contact-icon">  dolcevitadelights@gmail.com  
+                    <img src="fblogo.png" alt="Facebook" class="contact-icon">  DolceVitaDelights   
+                    <img src="whatsapplogo.png" alt="Whatsapp" class="contact-icon">  +60123456789 
+                    <img src="instalogo.png" alt="Insta" class="contact-icon">  @DolceVitaDelights 
+                </div>
+            
+                <div class="copyright">
+                    &copy; Copyright 2021 Dolce Vita Delights Sdn. Bhd. <br>
+                    Registration No. 20150103562 (791602-A) <br>
+                    All rights reserved.
+                </div>
+            </footer>
+            </body>
+</html>
+
